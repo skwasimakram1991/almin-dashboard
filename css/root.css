@@ -1,0 +1,20 @@
+:root {
+
+    /* color code */
+    --Black: #121212;
+    --White: #fff;
+    --Red: #E81B03;
+
+    /* font family */
+
+    --montserrat-Global: 'Montserrat', sans-serif;
+    --openSans-Global: 'Open Sans', sans-serif;
+
+
+    --marquee-width: 100vw;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+    --item-font-size: 10vw;
+
+}
