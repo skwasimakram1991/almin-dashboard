@@ -11,6 +11,7 @@ $(document).ready(function () {
   });
   $(".height-1").matchHeight();
   $(".height-2").matchHeight();
+  $(".height-3").matchHeight();
 });
 
 //! adjust Main-Content Height
