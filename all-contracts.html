@@ -32,22 +32,35 @@
             <div class="menulist">
                 <ul>
                     <li>
-                        <a href="#!"><img src="images/dashboard.svg" alt=""> Dashboard</a>
+                        <a href="#!">
+                            <img src="images/dashboard.svg" alt="" class="display-normal">
+                            <img src="images/dashboard-fill.svg" alt="" class="display-onhover"> Dashboard</a>
                     </li>
                     <li>
-                        <a href="#!"><img src="images/contracts.svg" alt=""> Contracts</a>
+                        <a href="#!">
+                            <img src="images/contracts.svg" alt="" class="display-normal">
+                            <img src="images/contracts-fill.svg" alt="" class="display-onhover">
+                            Contracts</a>
                     </li>
                     <li>
-                        <a href="#!"><img src="images/employees.svg" alt=""> Employees</a>
+                        <a href="#!">
+                            <img src="images/employees.svg" alt="" class="display-normal">
+                            <img src="images/employees-fill.svg" alt="" class="display-onhover">
+                            Employees</a>
                     </li>
                     <!-- <li>
-                        <a href="#!"><img src="images/transactions.svg" alt=""> Transactions</a>
-                    </li> -->
+                                    <a href="#!"><img src="images/transactions.svg" alt=""> Transactions</a>
+                                </li> -->
                     <li>
-                        <a href="#!"><img src="images/support.svg" alt=""> Support</a>
+                        <a href="#!">
+                            <img src="images/support.svg" alt="" class="display-normal">
+                            <img src="images/support-fill.svg" alt="" class="display-onhover">
+                            Support</a>
                     </li>
                     <li>
-                        <a href="#!"><img src="images/setting.svg" alt=""> Settings</a>
+                        <a href="#!">
+                            <img src="images/setting.svg" alt="" class="display-normal">
+                            <img src="images/setting-fill.svg" alt="" class="display-onhover"> Settings</a>
                     </li>
 
                 </ul>
@@ -62,7 +75,7 @@
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
                 <div class="top-left">
-                    <h3 class="fs20">Transactions
+                    <h3 class="fs20">Contracts
                     </h3>
                 </div>
                 <div class="top-right">
@@ -71,7 +84,7 @@
                             <a href="#?" class="noti">
                                 <img src="images/notification.svg" alt="">
                                 <span>
-                                    01
+                                    6
                                 </span>
                             </a>
                         </li>
@@ -81,9 +94,9 @@
                                     <img src="images/profile-pic.svg" alt="" class="profile-pic">
                                     <div class="pr-txt">
                                         <h3 class="fs16">
-                                            Theresa Webb
+                                            WindowX
                                         </h3>
-                                        <span class="fs12">Safari</span>
+                                        <span class="fs12">Admin</span>
                                     </div>
                                     <img src="images/arrow_drop_down.svg" alt="">
                                 </div>
@@ -97,10 +110,18 @@
 
                 <div class="innr_cntnt">
                     <div class="empl_top">
-                        <h4>All Transactions</h4>
+                        <!-- <h4>All Transactions</h4> -->
 
                         <div class="srch_dv">
                             <input type="text" class="form-control" placeholder="Search">
+                            <div class="filterlist">
+                                <select name="" id="">
+                                    <option value="Filter" selected disabled>Filter</option>
+                                    <option value="Not stared">Not stared</option>
+                                    <option value="In Progress">In Progress</option>
+                                    <option value="Done">Done</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
 
@@ -148,14 +169,16 @@
                                             Dianne Russell
                                         </div>
                                     </td>
-                                    <td class="text-center">
-                                        02/20/24
-                                    </td>
+
                                     <td>
 
                                         <div class="chips red">
                                             <span>Not Assigned </span>
                                         </div>
+                                    </td>
+
+                                    <td class="text-center">
+                                        02/20/24
                                     </td>
 
                                     <td>
@@ -165,10 +188,15 @@
                                         </div>
                                     </td>
 
+
                                     <td>
                                         <div class="edit">
-                                            <img src="./images/trash-icn.svg" alt="">
-                                            <img src="./images/edit-icn.svg" alt="">
+                                            <!-- <a href="#!">
+                                                <img src="./images/trash-icn.svg" alt="">
+                                            </a> -->
+                                            <a href="#!">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </a>
                                         </div>
                                     </td>
                                 </tr>
@@ -201,14 +229,13 @@
                                             Annette Black
                                         </div>
                                     </td>
-                                    <td class="text-center">
-                                        02/20/24
-                                    </td>
                                     <td>
-
                                         Kristin Watson
                                     </td>
 
+                                    <td class="text-center">
+                                        02/20/24
+                                    </td>
                                     <td>
 
                                         <div class="chips yellow">
@@ -218,8 +245,12 @@
 
                                     <td>
                                         <div class="edit">
-                                            <img src="./images/trash-icn.svg" alt="">
-                                            <img src="./images/edit-icn.svg" alt="">
+                                            <!-- <a href="#!">
+                                                <img src="./images/trash-icn.svg" alt="">
+                                            </a> -->
+                                            <a href="#!">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </a>
                                         </div>
                                     </td>
                                 </tr>
@@ -251,11 +282,13 @@
                                             Jerome Bell
                                         </div>
                                     </td>
+                                    <td>
+
+                                        Guy Hawkins
+                                    </td>
+
                                     <td class="text-center">
                                         02/20/24
-                                    </td>
-                                    <td>
-                                        Guy Hawkins
                                     </td>
 
                                     <td>
@@ -267,8 +300,12 @@
 
                                     <td>
                                         <div class="edit">
-                                            <img src="./images/trash-icn.svg" alt="">
-                                            <img src="./images/edit-icn.svg" alt="">
+                                            <!-- <a href="#!">
+                                                <img src="./images/trash-icn.svg" alt="">
+                                            </a> -->
+                                            <a href="#!">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </a>
                                         </div>
                                     </td>
                                 </tr>
@@ -301,11 +338,13 @@
                                             Robert Fox
                                         </div>
                                     </td>
+                                    <td>
+
+                                        Guy Hawkins
+                                    </td>
+
                                     <td class="text-center">
                                         02/20/24
-                                    </td>
-                                    <td>
-                                        Guy Hawkins
                                     </td>
 
                                     <td>
@@ -317,8 +356,12 @@
 
                                     <td>
                                         <div class="edit">
-                                            <img src="./images/trash-icn.svg" alt="">
-                                            <img src="./images/edit-icn.svg" alt="">
+                                            <!-- <a href="#!">
+                                                <img src="./images/trash-icn.svg" alt="">
+                                            </a> -->
+                                            <a href="#!">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </a>
                                         </div>
                                     </td>
                                 </tr>
@@ -351,13 +394,13 @@
                                             Darlene Robertson
                                         </div>
                                     </td>
+                                    <td>
+
+                                        Guy Hawkins
+                                    </td>
                                     <td class="text-center">
                                         02/20/24
                                     </td>
-                                    <td>
-                                        Guy Hawkins
-                                    </td>
-
                                     <td>
 
                                         <div class="chips green">
@@ -367,8 +410,12 @@
 
                                     <td>
                                         <div class="edit">
-                                            <img src="./images/trash-icn.svg" alt="">
-                                            <img src="./images/edit-icn.svg" alt="">
+                                            <!-- <a href="#!">
+                                                <img src="./images/trash-icn.svg" alt="">
+                                            </a> -->
+                                            <a href="#!">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </a>
                                         </div>
                                     </td>
                                 </tr>
@@ -400,11 +447,12 @@
                                             Wade Warren
                                         </div>
                                     </td>
+                                    <td>
+
+                                        Guy Hawkins
+                                    </td>
                                     <td class="text-center">
                                         02/20/24
-                                    </td>
-                                    <td>
-                                        Guy Hawkins
                                     </td>
 
                                     <td>
@@ -416,8 +464,12 @@
 
                                     <td>
                                         <div class="edit">
-                                            <img src="./images/trash-icn.svg" alt="">
-                                            <img src="./images/edit-icn.svg" alt="">
+                                            <!-- <a href="#!">
+                                                <img src="./images/trash-icn.svg" alt="">
+                                            </a> -->
+                                            <a href="#!">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </a>
                                         </div>
                                     </td>
                                 </tr>
@@ -449,13 +501,14 @@
                                             Wade Warren
                                         </div>
                                     </td>
+
+                                    <td>
+
+                                        Guy Hawkins
+                                    </td>
                                     <td class="text-center">
                                         02/20/24
                                     </td>
-                                    <td>
-                                        Guy Hawkins
-                                    </td>
-
                                     <td>
 
                                         <div class="chips green">
@@ -465,8 +518,12 @@
 
                                     <td>
                                         <div class="edit">
-                                            <img src="./images/trash-icn.svg" alt="">
-                                            <img src="./images/edit-icn.svg" alt="">
+                                            <!-- <a href="#!">
+                                                <img src="./images/trash-icn.svg" alt="">
+                                            </a> -->
+                                            <a href="#!">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </a>
                                         </div>
                                     </td>
                                 </tr>
@@ -497,11 +554,12 @@
                                             Courtney Henry
                                         </div>
                                     </td>
+                                    <td>
+
+                                        Guy Hawkins
+                                    </td>
                                     <td class="text-center">
                                         02/20/24
-                                    </td>
-                                    <td>
-                                        Guy Hawkins
                                     </td>
 
                                     <td>
@@ -513,8 +571,12 @@
 
                                     <td>
                                         <div class="edit">
-                                            <img src="./images/trash-icn.svg" alt="">
-                                            <img src="./images/edit-icn.svg" alt="">
+                                            <!-- <a href="#!">
+                                                <img src="./images/trash-icn.svg" alt="">
+                                            </a> -->
+                                            <a href="#!">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </a>
                                         </div>
                                     </td>
                                 </tr>
@@ -547,13 +609,13 @@
                                             Kristin Watson
                                         </div>
                                     </td>
+                                    <td>
+
+                                        Guy Hawkins
+                                    </td>
                                     <td class="text-center">
                                         02/20/24
                                     </td>
-                                    <td>
-                                        Guy Hawkins
-                                    </td>
-
                                     <td>
 
                                         <div class="chips green">
@@ -563,8 +625,12 @@
 
                                     <td>
                                         <div class="edit">
-                                            <img src="./images/trash-icn.svg" alt="">
-                                            <img src="./images/edit-icn.svg" alt="">
+                                            <!-- <a href="#!">
+                                                <img src="./images/trash-icn.svg" alt="">
+                                            </a> -->
+                                            <a href="#!">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </a>
                                         </div>
                                     </td>
                                 </tr>
@@ -603,10 +669,10 @@
                                             Guy Hawkins
                                         </div>
                                     </td>
+
                                     <td class="text-center">
                                         02/20/24
                                     </td>
-
                                     <td>
 
                                         <div class="chips green">
@@ -616,8 +682,12 @@
 
                                     <td>
                                         <div class="edit">
-                                            <img src="./images/trash-icn.svg" alt="">
-                                            <img src="./images/edit-icn.svg" alt="">
+                                            <!-- <a href="#!">
+                                                <img src="./images/trash-icn.svg" alt="">
+                                            </a> -->
+                                            <a href="#!">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </a>
                                         </div>
                                     </td>
                                 </tr>

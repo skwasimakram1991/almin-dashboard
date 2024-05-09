@@ -490,10 +490,10 @@ header {
                 width: 17px;
               }
               span {
-                width: 18px;
+                width: 16px;
                 border-radius: 50px;
                 border: 1px solid var(--White, #fff);
-                background: var(--Red, #e43f5a);
+                background: #e43f5a;
                 color: var(--Light-Gray, #f6f6f6);
                 text-align: center;
                 font-family: Montserrat;
@@ -503,9 +503,9 @@ header {
                 line-height: normal;
                 display: block;
                 position: absolute;
-                top: -9px;
-                padding: 3px;
-                right: -9px;
+                top: -8px;
+                padding: 1px 1px 0 0px;
+                right: -8px;
               }
             }
           }
@@ -999,7 +999,8 @@ header {
       }
 
       .srch_dv {
-        width: calc(100% - 722px);
+        // width: calc(100% - 722px);
+        width: auto;
         display: flex;
         justify-content: flex-end;
         column-gap: 12px;
@@ -1011,7 +1012,7 @@ header {
           background: var(--BG, #fafafb);
           max-width: 285px;
           margin-bottom: 0;
-          background: url(../images/search-icn.svg) no-repeat 12px 14px;
+          background: url(../images/search-normal-dark.svg) no-repeat 12px 13px;
           color: #000;
           font-family: Montserrat;
           font-size: 16px;
@@ -1035,6 +1036,19 @@ header {
           font-weight: 400;
           line-height: 18px;
           background: url(../images/Paper-plus.svg) no-repeat 12px 14px #00b3f0;
+        }
+        select {
+          // width: 86px;
+          width: max-content;
+          margin-bottom: 0;
+          background: url(../images/filter_list.svg) no-repeat 9px 12px;
+          color: var(--Secondary-Text, #667085);
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18px; /* 112.5% */
+          padding: 12px 12px 12px 32px;
         }
       }
     }
@@ -1280,7 +1294,7 @@ header {
 
         li {
           color: #505050;
-          padding: 10px 12px;
+          padding: 7px;
           border-radius: 4px;
           border: 1px solid var(--Brand-Off-white, #eeeff1);
           background: var(--White, #fff);
@@ -1288,12 +1302,21 @@ header {
           cursor: pointer;
           display: flex;
           align-items: center;
+          -moz-column-gap: 10px;
           column-gap: 10px;
           font-family: Montserrat;
           font-size: 14px;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
+          width: 33px;
+          height: 33px;
+          text-align: center;
+          justify-content: center;
+          &:first-child,
+          &:last-child {
+            width: auto;
+          }
 
           &:hover {
             background-color: #00b3f0;
@@ -1999,6 +2022,7 @@ header {
   }
 
   // ! May 8, 2024
+  /* ! May 8, 2024 */
 
   .chathead {
     display: flex;
