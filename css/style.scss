@@ -829,6 +829,7 @@ header {
     border: 1px solid var(--Stroke, #e0e3e8);
     background: var(--White, #fff);
     padding: 24px;
+    height: 100%;
     .title {
       display: flex;
       align-items: center;
@@ -1012,6 +1013,14 @@ header {
           font-style: normal;
           font-weight: 500;
           line-height: 20px; /* 142.857% */
+        }
+      }
+    }
+    .boxcontent {
+      height: 90%;
+      img {
+        &.chart {
+          height: 100%;
         }
       }
     }
@@ -1406,6 +1415,7 @@ header {
           justify-content: flex-start;
           gap: 12px;
           margin-bottom: 28px;
+          flex-wrap: wrap;
           li {
             a {
               width: 49px;
@@ -2066,13 +2076,13 @@ header {
       background-color: #e43f5a;
     }
   }
-    &.red {
+  &.red {
     span {
-      color: var(--Red, #FF0303);
+      color: var(--Red, #ff0303);
     }
-    background: #FDEDEC;
+    background: #fdedec;
     &:before {
-      background-color: #FF0303;
+      background-color: #ff0303;
     }
   }
   &.yellow {
@@ -2123,6 +2133,27 @@ header {
 }
 
 .support {
+  .srch_dv.__edit {
+    padding: 0 15px;
+    margin: 0 0 20px 0;
+    input[type="text"] {
+      max-width: 100% !important;
+      padding: 12px 12px 12px 36px;
+      border-radius: 12px;
+      border: 1px solid var(--gray, #c9c9c9);
+      background: var(--BG, #fafafb);
+      max-width: 285px;
+      margin-bottom: 0;
+      background: url(../images/search-normal-dark.svg) no-repeat 12px 13px;
+      color: #000;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  }
+
   .borderbx,
   .borderbx1 {
     height: 100%;
@@ -2136,10 +2167,12 @@ header {
     // overflow-y: auto;
     // height: 67vh;
     h4.fs20 {
-      padding: 24px;
+      // padding: 24px;
+      padding: 20px 15px;
       // padding-bottom: 0;
     }
   }
+
   .titlebar {
     display: flex;
     align-items: center;
@@ -2190,14 +2223,16 @@ header {
   .chatlist {
     ul {
       height: 71vh;
-      padding: 24px;
+      padding: 20px 15px 20px;
       padding-top: 0;
+
       li {
-        display: flex;
+        display: grid;
         align-items: center;
         gap: 12px;
         cursor: pointer;
         margin-bottom: 20px;
+        grid-template-columns: 48px 1fr;
         &:last-child {
           margin-bottom: 0;
           // margin-bottom: 20px;
@@ -2758,7 +2793,7 @@ header {
   }
   .tablebx {
     border-radius: 16px 16px 0px 0px;
-    overflow: hidden;
+    overflow-y: auto;
     table {
       width: 100%;
       tr {
@@ -2789,7 +2824,7 @@ header {
 
 .popup-modal {
   padding: 24px;
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
   border-radius: 10px;
   background: #fff;
