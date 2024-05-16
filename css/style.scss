@@ -1370,10 +1370,10 @@ header {
           height: 33px;
           text-align: center;
           justify-content: center;
-          &:first-child,
-          &:last-child {
-            width: auto;
-          }
+          // &:first-child,
+          // &:last-child {
+          //   width: auto;
+          // }
 
           &:hover {
             background-color: #00b3f0;
@@ -2822,6 +2822,25 @@ header {
   }
 }
 
+.posres {
+  position: relative;
+}
+.error {
+  border-color: red !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  color: red !important;
+  &.woborder {
+    border: none !important;
+    margin: 5px 0 0 0;
+    display: block;
+    font-size: 12px;
+    position: absolute;
+    left: 14px;
+    bottom: 12px;
+  }
+}
+
 .popup-modal {
   padding: 24px;
   max-width: 800px;
@@ -2861,18 +2880,6 @@ header {
       }
     }
     .inputrow {
-      .error {
-        border-color: red !important;
-        border-width: 1px !important;
-        border-style: solid !important;
-        color: red !important;
-        &.woborder {
-          border: none !important;
-          margin: 5px 0 0 0;
-          display: block;
-          font-size: 12px;
-        }
-      }
       .inputcontainer {
         label {
           color: var(--Black, #000);
