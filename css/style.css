@@ -2613,4 +2613,13 @@ label.checkbox input[type=checkbox] {
 }
 .popup-modal .popupbody .uploadedphoto .btn {
   width: 100%;
+}
+
+.login .form_div .forms .passwrd input[type=password] + div + span {
+  top: 53px;
+  left: 0;
+}
+
+.customMargin .error.woborder {
+  bottom: -15px;
 }/*# sourceMappingURL=style.css.map */
