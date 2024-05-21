@@ -111,6 +111,21 @@ a {
       color: var(--Secondary-Text, #667085);
     }
   }
+  &.wblueborder {
+    border-radius: 12px;
+    border: 1px solid var(--gray, #00b3f0);
+    background: transparent;
+    color: var(--Secondary-Text, #00b3f0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    &:hover {
+      background: #00b3f0;
+      color: var(--Secondary-Text, #fff);
+    }
+  }
   &:focus,
   &:active,
   &:active:focus {
@@ -1873,7 +1888,11 @@ header {
       border: 1px solid var(--Stroke, #e0e3e8);
       background: var(--White, #fff);
       padding: 20px;
-      // margin-bottom: 28px;
+      margin-bottom: 28px;
+
+      &.nomargin {
+        margin-bottom: 0;
+      }
 
       h5 {
         color: var(--Black, #000);
@@ -1921,6 +1940,15 @@ header {
             }
           }
         }
+      }
+
+      p {
+        color: var(--Dark-grey, #3f4b63);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 175% */
       }
     }
 
@@ -2950,5 +2978,59 @@ header {
 .customMargin {
   .error.woborder {
     bottom: -15px;
+  }
+}
+
+.contractopen {
+  span {
+    display: block;
+    margin: 16px 0;
+  }
+}
+
+.contractassign {
+  p {
+    color: var(--Dark-Gray, #505050);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.enterotp {
+  margin-top: 60px;
+  h6 {
+    color: var(--Black, #000);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+  }
+  .otpcontainer {
+    margin-bottom: 20px;
+    max-width: 418px;
+    input[type="number"] {
+      padding: 16px;
+      border-radius: 12px;
+      background: var(--Light-Gray, #f6f6f6);
+      color: var(--Dark-Gray, #505050);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      border: none;
+      -moz-appearance: textfield;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
   }
 }

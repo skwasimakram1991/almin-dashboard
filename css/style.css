@@ -110,6 +110,21 @@ a {
   background: var(--White, #acacac);
   color: var(--Secondary-Text, #667085);
 }
+.btn.wblueborder {
+  border-radius: 12px;
+  border: 1px solid var(--gray, #00b3f0);
+  background: transparent;
+  color: var(--Secondary-Text, #00b3f0);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.btn.wblueborder:hover {
+  background: #00b3f0;
+  color: var(--Secondary-Text, #fff);
+}
 .btn:focus, .btn:active, .btn:active:focus {
   outline: 0;
   box-shadow: none;
@@ -1643,6 +1658,10 @@ label.checkbox input[type=checkbox] {
   border: 1px solid var(--Stroke, #e0e3e8);
   background: var(--White, #fff);
   padding: 20px;
+  margin-bottom: 28px;
+}
+.main-content .innr_cntnt .billing.nomargin {
+  margin-bottom: 0;
 }
 .main-content .innr_cntnt .billing h5 {
   color: var(--Black, #000);
@@ -1683,6 +1702,14 @@ label.checkbox input[type=checkbox] {
 .main-content .innr_cntnt .billing ul li.totl p {
   font-weight: 500;
   color: #000;
+}
+.main-content .innr_cntnt .billing p {
+  color: var(--Dark-grey, #3f4b63);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
 }
 .main-content .innr_cntnt .progress-custom {
   min-height: 167px;
@@ -2622,4 +2649,53 @@ label.checkbox input[type=checkbox] {
 
 .customMargin .error.woborder {
   bottom: -15px;
+}
+
+.contractopen span {
+  display: block;
+  margin: 16px 0;
+}
+
+.contractassign p {
+  color: var(--Dark-Gray, #505050);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.enterotp {
+  margin-top: 60px;
+}
+.enterotp h6 {
+  color: var(--Black, #000);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+.enterotp .otpcontainer {
+  margin-bottom: 20px;
+  max-width: 418px;
+}
+.enterotp .otpcontainer input[type=number] {
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--Light-Gray, #f6f6f6);
+  color: var(--Dark-Gray, #505050);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  -moz-appearance: textfield;
+}
+.enterotp .otpcontainer input[type=number]::-webkit-outer-spin-button, .enterotp .otpcontainer input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
