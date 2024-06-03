@@ -396,20 +396,6 @@ label.checkbox input[type=checkbox] {
   color: var(--Dark-Gray, #505050);
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #666;
-  border-radius: 20px;
-}
-
-::-webkit-scrollbar-track {
-  background: #ddd;
-  border-radius: 20px;
-}
-
 .wrap {
   display: flex;
   align-items: flex-start;
@@ -713,6 +699,17 @@ label.checkbox input[type=checkbox] {
 .main-content {
   overflow-y: auto;
   padding: 35px 40px;
+}
+.main-content::-webkit-scrollbar {
+  width: 10px;
+}
+.main-content::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+.main-content::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
 }
 .main-content .mb40 {
   margin-bottom: 40px;
@@ -1247,6 +1244,12 @@ label.checkbox input[type=checkbox] {
 }
 .main-content .innr_cntnt .pgination ul li.more {
   border: none;
+}
+.main-content .innr_cntnt .pgination ul li:first-child {
+  width: auto;
+}
+.main-content .innr_cntnt .pgination ul li:last-child {
+  width: auto;
 }
 .main-content .innr_cntnt .pgination ul li:last-child img {
   rotate: 180deg;
@@ -2698,4 +2701,79 @@ label.checkbox input[type=checkbox] {
 .enterotp .otpcontainer input[type=number]::-webkit-outer-spin-button, .enterotp .otpcontainer input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.tabs-list {
+  margin-bottom: 28px;
+}
+.tabs-list ul {
+  border-bottom: 1px solid var(--Stroke, #e0e3e8);
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+.tabs-list ul li {
+  display: flex;
+  padding: 8px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: var(--Dark-Gray, #505050);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 112.5% */
+  margin: 0 0 -0.9px 0;
+  cursor: pointer;
+}
+.tabs-list ul li.active {
+  color: var(--Sky-Blue, #00b3f0);
+  border-bottom: 2px solid var(--Sky-Blue, #00b3f0);
+}
+
+.tabs-container .w70per {
+  width: 70%;
+}
+.tabs-container .w15per {
+  width: 15%;
+}
+.tabs-container td {
+  padding: 26px 12px !important;
+}
+.tabs-container td span {
+  overflow: hidden;
+  color: var(--Black, #000);
+  text-overflow: ellipsis;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.tabs-container td .pic-add {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.pt28 {
+  padding-top: 28px;
+}
+
+.popup-modal .popupbody .inputrow .inputcontainer input[type=submit] {
+  width: auto;
+  display: inline-block;
+  border-radius: 12px;
+  background: var(--Sky-Blue, #00b3f0);
+  padding: 16px;
+  color: var(--White, #fff);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: 1px solid var(--gray, #00b3f0);
 }/*# sourceMappingURL=style.css.map */

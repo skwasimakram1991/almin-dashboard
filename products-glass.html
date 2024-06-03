@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almin Sales</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        a:-webkit-any-link:focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="images/logo-small.svg" alt="">
+                <div class="hamberger">
+                    <i class="fa fa-close" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="menulist">
+                <ul>
+                    <li>
+                        <a href="#!">
+                            <img src="images/dashboard.svg" alt="" class="display-normal">
+                            <img src="images/dashboard-fill.svg" alt="" class="display-onhover"> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <img src="images/contracts.svg" alt="" class="display-normal">
+                            <img src="images/contracts-fill.svg" alt="" class="display-onhover">
+                            Contracts</a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <img src="images/employees.svg" alt="" class="display-normal">
+                            <img src="images/employees-fill.svg" alt="" class="display-onhover">
+                            Employees</a>
+                    </li>
+                    <!-- <li>
+                                                <a href="#!"><img src="images/transactions.svg" alt=""> Transactions</a>
+                                            </li> -->
+                    <li>
+                        <a href="#!">
+                            <img src="images/support.svg" alt="" class="display-normal">
+                            <img src="images/support-fill.svg" alt="" class="display-onhover">
+                            Support</a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <img src="images/setting.svg" alt="" class="display-normal">
+                            <img src="images/setting-fill.svg" alt="" class="display-onhover"> Settings</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="logout">
+                <a href="logout.php"><img src="images/logout.svg" alt=""> Logout</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="topbar">
+                <div class="top-left">
+                    <div class="hamberger">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="fs20">Products</h3>
+                </div>
+                <div class="top-right">
+                    <ul>
+                        <li>
+                            <a href="#?" class="noti">
+                                <img src="images/notification.svg" alt="">
+                                <span>
+                                    6
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <div class="profile">
+                                    <img src="images/profile-pic.svg" alt="" class="profile-pic">
+                                    <div class="pr-txt">
+                                        <h3 class="fs16">
+                                            WindowX
+                                        </h3>
+                                        <span class="fs12">Admin</span>
+                                    </div>
+                                    <img src="images/arrow_drop_down.svg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="main-content">
+
+                <div class="innr_cntnt">
+                    <div class="tabs-list">
+                        <ul>
+                            <li>Product Type</li>
+                            <li>Profile</li>
+                            <li>Frame</li>
+                            <li>Sash</li>
+                            <li class="active">Glass</li>
+                        </ul>
+                    </div>
+                    <div class="tabs-container">
+                        <div class="empl_top">
+                            <div class="srch_dv __edit">
+                                <div class="srchlft">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <div class="srchrgt">
+                                    <a href="#!" class="btn"> <img src="images/plus.svg" alt=""> Add Frame</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="emply_table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th class="w20per">Glass Type</th>
+                                        <th class="w20per">Color</th>
+                                        <th class="w15per">Dimensions</th>
+                                        <th class="w15per">Cost</th>
+                                        <th class="w10per">Date</th>
+                                        <th class="w10per text-center">Action</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pic-add">
+                                                <img src="images/avatar-pro.svg" alt="">
+                                                <span>Clear Float Glass</span>
+                                            </div>
+                                        </td>
+                                        <td>Emerald</td>
+                                        <td>1m x 1m x 6mm</td>
+                                        <td>$446.61</td>
+                                        <td>02/20/24</td>
+                                        <td>
+                                            <div class="edit">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pic-add">
+                                                <img src="images/avatar-pro.svg" alt="">
+                                                <span>AKTEFE 43128 - TBA-Frame</span>
+                                            </div>
+                                        </td>
+                                        <td>Lime</td>
+                                        <td>1m x 1m x 6mm</td>
+                                        <td>$169.43</td>
+                                        <td>03/20/24</td>
+                                        <td>
+                                            <div class="edit">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pic-add">
+                                                <img src="images/avatar-pro.svg" alt="">
+                                                <span>AKTEFE 3452 - TBA-Frame</span>
+                                            </div>
+                                        </td>
+                                        <td>Blue</td>
+                                        <td>1m x 1m x 6mm</td>
+                                        <td>$948.55</td>
+                                        <td>04/20/24</td>
+                                        <td>
+                                            <div class="edit">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pic-add">
+                                                <img src="images/avatar-pro.svg" alt="">
+                                                <span>SERTVC 425345 - TBA-Frame</span>
+                                            </div>
+                                        </td>
+                                        <td>Orange</td>
+                                        <td>1m x 1m x 6mm</td>
+                                        <td>$630.44</td>
+                                        <td>05/20/24</td>
+                                        <td>
+                                            <div class="edit">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pic-add">
+                                                <img src="images/avatar-pro.svg" alt="">
+                                                <span>EVBWTER 43129 - TBA-Frame</span>
+                                            </div>
+                                        </td>
+                                        <td>Red</td>
+                                        <td>1m x 1m x 6mm</td>
+                                        <td>$450.54</td>
+                                        <td>05/20/24</td>
+                                        <td>
+                                            <div class="edit">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pic-add">
+                                                <img src="images/avatar-pro.svg" alt="">
+                                                <span>VSWTCV 89765 - TBA-Frame</span>
+                                            </div>
+                                        </td>
+                                        <td>Rose</td>
+                                        <td>1m x 1m x 6mm</td>
+                                        <td>$106.58</td>
+                                        <td>05/20/24</td>
+                                        <td>
+                                            <div class="edit">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pic-add">
+                                                <img src="images/avatar-pro.svg" alt="">
+                                                <span>AVEWRC 1235 - TBA-Frame</span>
+                                            </div>
+                                        </td>
+                                        <td>Purple</td>
+                                        <td>1m x 1m x 6mm</td>
+                                        <td>$589.99</td>
+                                        <td>05/20/24</td>
+                                        <td>
+                                            <div class="edit">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pic-add">
+                                                <img src="images/avatar-pro.svg" alt="">
+                                                <span>SBE4TECVASRAW 2342345 - TBA-Frame</span>
+                                            </div>
+                                        </td>
+                                        <td>Violet</td>
+                                        <td>1m x 1m x 6mm</td>
+                                        <td>$943.65</td>
+                                        <td>05/20/24</td>
+                                        <td>
+                                            <div class="edit">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pic-add">
+                                                <img src="images/avatar-pro.svg" alt="">
+                                                <span>DVFTSRDT 354353 - TBA-Frame</span>
+                                            </div>
+                                        </td>
+                                        <td>Cerise</td>
+                                        <td>1m x 1m x 6mm</td>
+                                        <td>$928.41</td>
+                                        <td>05/20/24</td>
+                                        <td>
+                                            <div class="edit">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pic-add">
+                                                <img src="images/avatar-pro.svg" alt="">
+                                                <span>AKTEFE 43129 - TBA-Frame</span>
+                                            </div>
+                                        </td>
+                                        <td>Yellow</td>
+                                        <td>1m x 1m x 6mm</td>
+                                        <td>$475.22</td>
+                                        <td>05/20/24</td>
+                                        <td>
+                                            <div class="edit">
+                                                <img src="./images/edit-icn.svg" alt="">
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="pgination">
+                            <ul>
+                                <li>
+                                    <img src="images/left-arrw.svg" alt="">
+                                    Previous
+                                </li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li class="more">...</li>
+                                <li>10</li>
+                                <li>Next
+                                    <img src="images/left-arrw.svg" alt="">
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <footer>
+                <p>Copyright©2024 Almin Sales</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/equalheight.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
